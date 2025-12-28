@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muskurahat Foundation | Spreading Smiles</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script type="importmap">
+    {
+      "imports": {
+        "gsap": "https://esm.sh/gsap",
+        "gsap/ScrollTrigger": "https://esm.sh/gsap/ScrollTrigger",
+        "lucide": "https://esm.sh/lucide"
+      }
+    }
+    </script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="scroll-progress"></div>
+    
+    <nav class="glass-nav">
+        <div class="nav-content">
+            <div class="logo nav-trigger" data-section="home">
+                <img src="assets/Image/logo.jpeg" alt="M">
+                <span class="logo-text">Muskurahat</span>
+                <span class="logo-dot">.</span>
+            </div>
+            <div class="nav-links">
+                <a href="#" class="nav-trigger" data-section="home">Home</a>
+                <a href="#" class="nav-trigger" data-section="story">Our Story</a>
+                <a href="#" class="nav-trigger" data-section="volunteer">Volunteer</a>
+                <a href="#" class="nav-trigger" data-section="contact">Contact</a>
+            </div>
+            <button class="cta-pill nav-trigger" data-section="donate">Donate</button>
+        </div>
+    </nav>
+
+    <!-- Home Page -->
+    <main id="home-page" class="page-section active">
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-bg">
+                <img src="assets/Image/hero_child.png" alt="Happy Child">
+                <div class="hero-overlay"></div>
+            </div>
+            <div class="hero-content">
+                <h1 class="reveal-text">Because every <span class="accent">smile</span> tells a story of hope.</h1>
+                <p class="fade-in">We are on a mission to provide shelter, food, and empowerment to those who need it most. Join us in making the world a little kinder.</p>
+                <div class="hero-actions fade-in">
+                    <button class="cta-primary">Start a Change</button>
+                    <button class="cta-secondary">Our Story</button>
+                </div>
+            </div>
+            <div class="scroll-indicator">
+                <div class="mouse">
+                    <div class="wheel"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Stats Section -->
+        <section class="stats" id="impact">
+            <div class="container">
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <span class="stat-number" data-target="15000">0</span>
+                        <span class="stat-label">Meals Served</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number" data-target="500">0</span>
+                        <span class="stat-label">Shelters Provided</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number" data-target="2500">0</span>
+                        <span class="stat-label">Children Empowered</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Initiatives Section -->
+        <section class="initiatives" id="initiatives">
+            <div class="section-header">
+                <h2 class="reveal-text">Our Core Initiatives</h2>
+                <p>Simple acts of kindness, profound waves of change.</p>
+            </div>
+            <div class="initiatives-grid">
+                <div class="init-card">
+                    <div class="init-image">
+                        <img src="assets/Image/food_distribution.png" alt="Nutritious Food">
+                    </div>
+                    <div class="init-info">
+                        <h3>Nutritious Food</h3>
+                        <p>No one should go to sleep hungry. We provide daily wholesome meals to children and workers.</p>
+                    </div>
+                </div>
+                <div class="init-card">
+                    <div class="init-image">
+                        <img src="assets/Image/shelter_warm.png" alt="Safe Shelter">
+                    </div>
+                    <div class="init-info">
+                        <h3>Safe Shelter</h3>
+                        <p>A roof is a basic right. We build and maintain safe, warm spaces for the homeless.</p>
+                    </div>
+                </div>
+                <div class="init-card">
+                    <div class="init-image">
+                        <img src="assets/Image/clothing_care.png" alt="Dignity Clothing">
+                    </div>
+                    <div class="init-info">
+                        <h3>Dignity Clothing</h3>
+                        <p>Protecting lives and preserving dignity through clean, warm clothing for all seasons.</p>
+                    </div>
+                </div>
+                <div class="init-card">
+                    <div class="init-image">
+                        <img src="assets/Image/empowerment_growth.png" alt="Skill Empowerment">
+                    </div>
+                    <div class="init-info">
+                        <h3>Empowerment</h3>
+                        <p>Providing education and vocational training to break the cycle of poverty permanently.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Stories Section -->
+        <section class="stories" id="stories">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="reveal-text">Stories of Hope</h2>
+                    <p>Real journeys from the communities we uplift every single day.</p>
+                </div>
+                <div class="stories-orbit">
+                    <article class="story-orb fade-up">
+                        <div class="orb-ring glass-layer">
+                            <div class="orb-icon">
+                                <i data-lucide="book-open"></i>
+                            </div>
+                            <p class="orb-caption">Creative classrooms are blooming with music, art, and joy.</p>
+                        </div>
+                    </article>
+                    <article class="story-orb fade-up">
+                        <div class="orb-ring glass-layer">
+                            <div class="orb-icon">
+                                <i data-lucide="message-circle"></i>
+                            </div>
+                            <p class="orb-caption">Kitchens filled with laughter, spice, and shared promise.</p>
+                        </div>
+                    </article>
+                    <article class="story-orb fade-up">
+                        <div class="orb-ring glass-layer">
+                            <div class="orb-icon">
+                                <i data-lucide="globe"></i>
+                            </div>
+                            <p class="orb-caption">Mobile care hubs bring warmth to every corner of the map.</p>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="stories-footer fade-up">
+                    <button class="cta-pill nav-trigger" data-section="story">Explore Every Journey</button>
+                    <p class="micro-copy">Each milestone is fuelled by kind donors, tireless volunteers, and resilient communities.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Impact Journey Section -->
+        <section class="impact-journey">
+            <div class="container">
+                <div class="journey-header">
+                    <h2 class="reveal-text">The Ripple Effect</h2>
+                    <p class="fade-in">From the first hello to lifelong support — here is how your contribution travels.</p>
+                </div>
+                <div class="journey-timeline">
+                    <div class="timeline-track"></div>
+                    <div class="timeline-step fade-up">
+                        <div class="step-icon">
+                            <i data-lucide="calendar"></i>
+                        </div>
+                        <div class="step-content">
+                            <h3>Weekly Outreach</h3>
+                            <p>Field teams map urgent needs across urban clusters and connect with local shelters.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-step fade-up">
+                        <div class="step-icon">
+                            <i data-lucide="users"></i>
+                        </div>
+                        <div class="step-content">
+                            <h3>Community Circles</h3>
+                            <p>Support groups powered by volunteers, counsellors, and mentors welcome every new member.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-step fade-up">
+                        <div class="step-icon">
+                            <i data-lucide="heart"></i>
+                        </div>
+                        <div class="step-content">
+                            <h3>Care Packages</h3>
+                            <p>Nutritious meals, warm clothing, and hygiene kits reach families within 48 hours.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-step fade-up">
+                        <div class="step-icon">
+                            <i data-lucide="map-pin"></i>
+                        </div>
+                        <div class="step-content">
+                            <h3>Long-term Anchor</h3>
+                            <p>We channel scholarships, livelihood training, and safe housing for sustainable change.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="journey-highlight glass-layer fade-in">
+                    <div class="highlight-stat">
+                        <span class="highlight-number">18</span>
+                        <span class="highlight-label">Cities Reached Monthly</span>
+                    </div>
+                    <div class="highlight-divider"></div>
+                    <div class="highlight-quote">
+                        <p><span>“</span>Your kindness empowers our teams to respond faster and dream bigger.<span>”</span></p>
+                        <span class="quote-author">— Field Director, Muskurahat</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quote Section -->
+        <section class="quote-section">
+            <div class="container">
+                <blockquote class="fade-up">
+                    "Muskurahat is not just an organization; it's a promise that humanity still cares. Seeing these children smile is the greatest reward."
+                    <cite>— Founder's Vision</cite>
+                </blockquote>
+            </div>
+            <div class="wave-divider">
+                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                    <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+                </svg>
+            </div>
+        </section>
+
+        <!-- Call to Action -->
+        <section class="final-cta">
+            <div class="glass-box fade-up">
+                <h2>Be the reason someone smiles today.</h2>
+                <p>Your contribution, no matter how small, can change a life forever. Together, we can build a future full of smiles.</p>
+                <div class="cta-buttons">
+                    <button class="cta-primary pulse nav-trigger" data-section="donate">Donate Now</button>
+                    <button class="cta-secondary nav-trigger" data-section="volunteer">Volunteer</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Our Story Page -->
+    <main id="story-page" class="page-section">
+        <section class="page-hero">
+            <div class="container">
+                <h1 class="reveal-text">Our <span class="accent">Journey</span></h1>
+                <p class="fade-in">Muskurahat Foundation began with a simple belief: no smile should be lost to poverty. Over the years, we have grown from a small group of volunteers to a family dedicated to restoring dignity.</p>
+                <div class="story-image-grid">
+                    <img src="assets/Image/hero_child.png" alt="Happy faces" class="fade-up">
+                </div>
+            </div>
+        </section>
+        <section class="stats">
+            <div class="container">
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <span class="stat-number" data-target="10">0</span>
+                        <span class="stat-label">Years of Hope</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number" data-target="50">0</span>
+                        <span class="stat-label">Cities Reached</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Volunteer Page -->
+    <main id="volunteer-page" class="page-section">
+        <section class="page-hero">
+            <div class="container">
+                <h1 class="reveal-text">Become a <span class="accent">Hero</span></h1>
+                <p class="fade-in">Your time is the most valuable gift you can give. Join our global network of change-makers and see the impact of your kindness first-hand.</p>
+                <div class="volunteer-options">
+                    <div class="init-card fade-up">
+                        <div class="init-info">
+                            <h3>On-ground Action</h3>
+                            <p>Help us distribute food and clothing in your local community.</p>
+                            <button class="cta-pill">Apply Now</button>
+                        </div>
+                    </div>
+                    <div class="init-card fade-up">
+                        <div class="init-info">
+                            <h3>Digital Advocacy</h3>
+                            <p>Use your skills in design, tech, or writing to amplify our voice.</p>
+                            <button class="cta-pill">Join Virtually</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="volunteer-cta fade-up">
+                    <h3>Ready to start?</h3>
+                    <p>We match you with roles that reflect your strengths and the community’s needs.</p>
+                    <button class="cta-primary">Apply to Volunteer</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Contact Page -->
+    <main id="contact-page" class="page-section">
+        <section class="page-hero">
+            <div class="container">
+                <h1 class="reveal-text">Get in <span class="accent">Touch</span></h1>
+                <p class="fade-in">Have questions? Want to collaborate? We are just a message away.</p>
+                <div class="contact-card glass-box fade-up">
+                    <div class="contact-info">
+                        <div class="info-item">
+                            <span class="icon">📍</span>
+                            <p>123 Hope Lane, Kindness City</p>
+                        </div>
+                        <div class="info-item">
+                            <span class="icon">📧</span>
+                            <p>hello@muskurahat.org</p>
+                        </div>
+                    </div>
+                    <form class="contact-form">
+                        <input type="text" placeholder="Your Name" class="input-field">
+                        <input type="email" placeholder="Your Email" class="input-field">
+                        <textarea placeholder="Your Message" class="input-field"></textarea>
+                        <button type="submit" class="cta-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Donate Page -->
+    <main id="donate-page" class="page-section">
+        <section class="page-hero">
+            <div class="container">
+                <h1 class="reveal-text">Share a <span class="accent">Smile</span></h1>
+                <p class="fade-in">Every donation, however small, fuels our mission to provide shelter, food, and dignity.</p>
+                <div class="donation-grid">
+                    <div class="donate-tier glass-box fade-up">
+                        <h3>Provide a Meal</h3>
+                        <p class="price">$10</p>
+                        <button class="cta-pill">Donate</button>
+                    </div>
+                    <div class="donate-tier glass-box fade-up">
+                        <h3>Safe Night's Sleep</h3>
+                        <p class="price">$50</p>
+                        <button class="cta-pill">Donate</button>
+                    </div>
+                    <div class="donate-tier glass-box fade-up">
+                        <h3>Month of Education</h3>
+                        <p class="price">$100</p>
+                        <button class="cta-pill">Donate</button>
+                    </div>
+                </div>
+                <div class="donate-note glass-layer fade-in">
+                    <p>Every contribution is acknowledged with transparent reports and heartfelt updates from our field teams.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">Muskurahat.</div>
+                <div class="footer-links">
+                    <a href="#">Privacy</a>
+                    <a href="#">Terms</a>
+                    <a href="#">Contact</a>
+                </div>
+                <div class="socials">
+                    <i data-lucide="instagram"></i>
+                    <i data-lucide="twitter"></i>
+                    <i data-lucide="facebook"></i>
+                </div>
+            </div>
+            <p class="copyright">&copy; 2024 Muskurahat Foundation. Spreading hope, one smile at a time.</p>
+        </div>
+    </footer>
+
+    <div class="donate-fab-wrapper">
+        <div class="donate-sub-menu">
+            <button class="sub-menu-item nav-trigger" data-section="contact" aria-label="Contact Us">
+                <i data-lucide="mail"></i>
+            </button>
+            <button class="sub-menu-item nav-trigger" data-section="volunteer" aria-label="Volunteer">
+                <i data-lucide="users"></i>
+            </button>
+            <button class="sub-menu-item nav-trigger" data-section="donate" aria-label="Donate">
+                <i data-lucide="heart"></i>
+            </button>
+        </div>
+
+        <div class="floating-donate-pill">
+            <span class="icon">❤️</span>
+            <span class="text">Donate</span>
+        </div>
+    </div>
+
+    <script type="module" src="script.js"></script>
+</body>
+</html>
